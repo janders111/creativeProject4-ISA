@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css.css">
+<meta charset="utf-8" />
+<title>ISA Homepage</title>
+</head>
+<body>
+
+<div id = "nav-wrap">
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</div>
+
+<div id = "world">
+    <h1 id = "title">International Student Association</h1><br>
+    <h1 id = "gettingStarted">BYU Peer to Peer Mentoring Program</h1>
+</div>
+
+
+<div id="content">
+    <h1 div align="center" style="padding-top: 10px">Recent</h1><hr>
+    <h2 div align="center" style="padding-top: 10px">Time to Vote for New President!</h2>
+
+<div div align="center" style="padding-top: 10px">
+    <div id = "vote">
+        <p>Voting will be active during our next event! Please stay tuned! Votes will be stored in a database using a website backend!</p>
+        
+        <form v-on:submit.prevent="addItem">
+            <label for="fname">First Name</label>
+            <input type="text" v-model="firstName" id="fname"><br>
+            <label for="lname">First Name</label>
+            <input type="text" v-model="lastName" id="lname"><br>
+            <label for="byuID">BYU ID Number</label>
+            <input type="text" v-model="byuID" id="byuID"><br>
+        
+            <select v-model="priority" id="dropdown">
+                <option value="1">1st Nominee</option>
+                <option value="2">2nd Nominee</option>
+                <option value="3">3rd Nominee</option>
+            </select>    
+            <br>
+            <div id = "submit">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer style = "text-align: center">
+    <p>By: Jordan and Issac</p>
+    <p>Github: <a href="https://github.com/BYU-CS260-Winter-2018">janders111</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js" integrity="sha256-pU9euBaEcVl8Gtg+FRYCtin2vKLN8sx5/4npZDmY2VA=" crossorigin="anonymous"></script>
+
+</body>
+</html>
