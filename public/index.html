@@ -29,12 +29,12 @@
 
 <div div align="center" style="padding-top: 10px">
     <div id = "vote">
-        <p>Voting will be active during our next event! Please stay tuned! Votes will be stored in a database using a website backend!</p>
+        <!--<p>Voting will be active during our next event! Please stay tuned! Votes will be stored in a database using a website backend!</p>
         
         <form v-on:submit.prevent="addItem">
             <label for="fname">First Name</label>
             <input type="text" v-model="firstName" id="fname"><br>
-            <label for="lname">First Name</label>
+            <label for="lname">Last Name</label>
             <input type="text" v-model="lastName" id="lname"><br>
             <label for="byuID">BYU ID Number</label>
             <input type="text" v-model="byuID" id="byuID"><br>
@@ -48,17 +48,24 @@
             <div id = "submit">
                 <button type="submit">Submit</button>
             </div>
-        </form>
-    </div>
+		</form>-->
+		<button v-on:click="castVote('Jordan')">Jordan</button>
+		<button v-on:click="castVote('Isaac')">Isaac</button>
+		<h1>Current Winner</h1>
+		<h2>{{ winner }}</h2>
+		<p>with {{ percent }} percent of votes</p>
+	</div>
+</div>
 </div>
 
 <footer style = "text-align: center">
-    <p>By: Jordan and Issac</p>
+    <p>By: Jordan and Isaac</p>
     <p>Github: <a href="https://github.com/BYU-CS260-Winter-2018">janders111</a>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js" integrity="sha256-pU9euBaEcVl8Gtg+FRYCtin2vKLN8sx5/4npZDmY2VA=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
